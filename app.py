@@ -70,7 +70,7 @@ def register():
 # Route for handling the login page logic
 @app.route('/login', methods=['GET', 'POST'])
 def login():
-    error = None
+    error = ""
     if request.method == 'POST' and 'email' in request.form and 'password' in request.form:
         # Create variables for easy access
         email = request.form['email']
@@ -91,7 +91,7 @@ def login():
             # Account doesnt exist or username/password incorrect
             error = 'Incorrect username/password!'
            
-    return render_template('login2.html')
+    return render_template('login2.html',error=error)
 
 
 # start the server with the 'run()' method

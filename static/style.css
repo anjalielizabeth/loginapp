@@ -6,7 +6,7 @@
     -moz-osx-font-smoothing: grayscale;
 }
 body {
-    background-color: #435165;
+    background-color: #ffffff;
     margin: 0;
 }
 .login, .register {
@@ -73,7 +73,22 @@ body {
     color: #ffffff;
     transition: background-color 0.2s;
 }
+.login form input[type="reset"], .register form input[type="reset"] {
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #3274d6;
+    border: 0;
+    cursor: pointer;
+    font-weight: bold;
+    color: #ffffff;
+    transition: background-color 0.2s;
+}
 .login form input[type="submit"]:hover, .register form input[type="submit"]:hover {
+    background-color: #2868c7;
+    transition: background-color 0.2s;
+}
+.login form input[type="reset"]:hover, .register form input[type="reset"]:hover {
     background-color: #2868c7;
     transition: background-color 0.2s;
 }
@@ -133,15 +148,30 @@ body.loggedin {
     padding: 25px;
   background-color: #fff;
 }
-.content > p table td, .content > div table td {
-  padding: 5px;
-}
-.content > p table td:first-child, .content > div table td:first-child {
-  font-weight: bold;
-  color: #4a536e;
-  padding-right: 15px;
-}
+
 .content > div p {
   padding: 5px;
   margin: 0 0 10px 0;
 }
+#categories {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #categories td, #categories th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #categories tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #categories tr:hover {background-color: #ddd;}
+  
+  #categories th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+  }
