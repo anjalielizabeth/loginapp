@@ -31,4 +31,4 @@ app.config['MYSQL_DB'] = 'loginapp'
 ![Alt text](screens/2.png?raw=true "Optional Title")
 ![Alt text](screens/3.png?raw=true "Optional Title")
 ![Alt text](screens/4.png?raw=true "Optional Title")
-![Alt text](screens/5.png?raw=true "Optional Title")
+![Alt text](screens/6.png?raw=true "Optional Title")
