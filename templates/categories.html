@@ -7,17 +7,23 @@
   </head>
   <body>
     <div class="container">
-      <h1>Welcome to categories!</h2>
+      <h1>Welcome to Categories Management!</h2>
       <br>
      <table id="categories">
       <tr>
         <th>Category Name</th>
         <th>Description</th>
+        <th>Edit/Delete</th>
       </tr>
       {% for row in rows %}
     <tr>
-        <td>{{ row.name}}</a></td>
-        <td>{{ row.description}}</td>
+      <td><a href="#">{{ row.name}}</a></td>
+      <td>{{ row.description}}</td>
+      <td>
+        <input type="button" id="edit_button" value="Edit" class="edit">
+        <input type="button" id="delete_button" value="Delete"> 
+
+      </td>
         
     </tr>
     {% endfor %}
