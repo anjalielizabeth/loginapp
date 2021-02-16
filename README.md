@@ -25,9 +25,8 @@ app.config['MYSQL_DB'] = 'loginapp'
 1. Python 2.7 should be installed.
 2. MySQL database should be installed.
 
-```
-Examples
-```
+## Example Screenshots
+
 ![Alt text](screens/1.png?raw=true "Optional Title")
 ![Alt text](screens/2.png?raw=true "Optional Title")
 ![Alt text](screens/3.png?raw=true "Optional Title")
