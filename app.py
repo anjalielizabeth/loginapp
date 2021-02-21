@@ -93,6 +93,21 @@ def login():
            
     return render_template('login2.html',error=error)
 
+    @app.route('/insert', methods=['GET', 'POST'])
+    def insert():
+        error = ""
+         if request.method == 'POST' and 'category name' in request.form and 'category description' in request.form:
+        # Create variables for easy access
+        category name = request.form['category name']
+        category description = request.form['category description']
+
+        cursor = mysql.connection.cursor(MySQLdb.cursors.DictCursor)
+        cursor.execute('SELECT * FROM users WHERE category name = %s AND category description = %s', (categoryname, categorydescription,))
+        # Fetch one record and return result
+        user = cursor.fetchone()
+        return render_template('addcategory.html',error=error)
+
+
 
 # start the server with the 'run()' method
 if __name__ == '__main__':
